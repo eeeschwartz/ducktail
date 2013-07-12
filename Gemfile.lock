@@ -9,6 +9,7 @@ GEM
     eventmachine-tail (0.6.4)
       eventmachine
     http_parser.rb (0.5.3)
+    rake (10.0.4)
     rspec (2.14.0)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -24,4 +25,5 @@ PLATFORMS
 DEPENDENCIES
   em-websocket
   eventmachine-tail
+  rake
   rspec
