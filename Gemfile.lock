@@ -1,14 +1,15 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.3.5)
     diff-lcs (1.2.4)
-    em-websocket (0.5.0)
+    em-websocket (0.3.8)
+      addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.5.3)
     eventmachine (1.0.3)
     eventmachine-tail (0.6.4)
       eventmachine
-    http_parser.rb (0.5.3)
+    eventmachine_httpserver (0.2.1)
     rake (10.0.4)
     rspec (2.14.0)
       rspec-core (~> 2.14.0)
@@ -25,5 +26,6 @@ PLATFORMS
 DEPENDENCIES
   em-websocket
   eventmachine-tail
+  eventmachine_httpserver
   rake
   rspec
