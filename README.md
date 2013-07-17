@@ -4,7 +4,8 @@ ducktail
 
 Allow any client device with a browser to `tail -f` a file of the server's choosing.
 
-**** Roadmap
+Roadmap
+------
 
 * Incorporate highline for option parsing
 * Convert tty color escape codes to css
