@@ -1,16 +1,7 @@
+#!/usr/bin/env ruby
+
 require 'evma_httpserver'
 require './lib/ducktail'
-
-class WebServer < EventMachine::Connection
-  include EventMachine::HttpServer
-
-  def process_http_request
-    resp = EventMachine::DelegatedHttpResponse.new(self)
-    resp.status = 200
-    resp.content = File.read('client.html')
-    resp.send_response
-  end
-end
 
 EM.run do
   EventMachine::start_server('0.0.0.0', 8080, WebServer)
